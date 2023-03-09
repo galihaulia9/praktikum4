@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<h3>Klik 2x pada setiap kotak untuk mengubah warnanya</h3>
+	<style>
+		.kotak{
+			width: 100px;
+			height: 100px;
+			background-color: #B3E5BE;
+			margin: 10px;
+			float: left;
+		}
+		.coklat{
+			background-color: brown;
+		}
+	</style>
+</head>
+<body>
+<div class="kotak kotak1"></div>
+<div class="kotak kotak2"></div>
+<div class="kotak kotak3"></div>
+<div class="kotak kotak4"></div>
+
+<script src="jquery-3.6.3.min.js"></script>
+<script type="text/javascript">
+	var kondisi = false;
+	$(document).ready(function(){
+		$(".kotak1").dblclick(function(){
+			if (kondisi == true) {
+				$(".kotak1").addClass("coklat");
+				kondisi = false;
+			}else {
+				$(".kotak1").removeClass("coklat");
+				kondisi = true;
+			}
+		});
+
+		$(".kotak2").dblclick(function(){
+			if (kondisi == true) {
+				$(".kotak2").addClass("coklat");
+				kondisi = false;
+			}else {
+				$(".kotak2").removeClass("coklat");
+				kondisi = true;
+			}
+		});
+
+		$(".kotak3").dblclick(function(){
+			if (kondisi == true) {
+				$(".kotak3").addClass("coklat");
+				kondisi = false;
+			}else {
+				$(".kotak3").removeClass("coklat");
+				kondisi = true;
+			}
+		});
+
+		$(".kotak4").dblclick(function(){
+			if (kondisi == true) {
+				$(".kotak4").addClass("coklat");
+				kondisi = false;
+			}else {
+				$(".kotak4").removeClass("coklat");
+				kondisi = true;
+			}
+		});
+	});
+</script>
+</body>
+</html>
